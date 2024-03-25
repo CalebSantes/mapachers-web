@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial';
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+}
+
+.titulo {
+    padding: 5vw;
+    margin: auto;
+    background-image: url('../resources/fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5vw;
+    box-shadow: 1vw 1vw 2vw rgba(0, 0, 0, 0.5);
+    text-align: center; /* Centra el texto del título */
+}
+
+.titulo h1 {
+    color: white; /* Color del texto del título */
+    margin: 0; /* Elimina el margen del título */
+    font-size: 4vw; /* Tamaño del título */
+    transition: font-size 0.5s; /* Transición suave del tamaño del título */
+}
+
+.titulo:hover h1 {
+    font-size: 4.5vw; /* Tamaño más grande del título al pasar el cursor */
+}
+
+.p1 {
+    display: flex;
+    flex-direction: row; /* Cambia el flujo del contenido a fila */
+    align-items: center; /* Centra verticalmente el contenido */
+    border-radius: 5vw;
+    box-shadow: 1vw 1vw 2vw rgba(0, 0, 0, 0.5);
+    padding: 5vw; /* Aumenta el espacio interno */
+    margin-bottom: 5vw;
+}
+
+.p1 h3 {
+    color: white; /* Cambia el color del texto del título */
+    margin-right: 2vw; /* Añade espacio entre el título y el texto */
+    font-size: 3vw; /* Tamaño del título adaptado al tamaño del dispositivo */
+    background-image: url('../resources/fondo.jpg'); /* Fondo de cada título */
+    background-size: cover; /* Ajusta el tamaño del fondo */
+    background-repeat: no-repeat; /* No se repite el fondo */
+    background-position: center; /* Centra el fondo */
+    border-radius: 5vw; /* Borde redondeado */
+    padding: 1vw; /* Espaciado interno */
+    font-family: 'Arial'; /* Cambia el tipo de letra */
+    writing-mode: vertical-rl; /* Cambia la orientación del texto a vertical */
+    transform: rotate(180deg); /* Rotación adicional para que el texto esté en posición vertical */
+    transition: font-size 0.5s; /* Transición suave del tamaño del título */
+}
+
+.p1:hover h3 {
+    font-size: 3.5vw; /* Tamaño más grande del título al pasar el cursor */
+}
+
+.p1 p {
+    font-size: 2.5vw; /* Tamaño del texto adaptado al tamaño del dispositivo */
+}
+
+img {
+    border-radius: 2vw; /* Hace que las imágenes se vean ligeramente redondeadas */
+    width: 20vw; /* Ajusta el ancho de las imágenes */
+    height: auto; /* Ajusta la altura de las imágenes de forma proporcional */
+}
+
+button {
+    display: none; /* Oculta el botón "Ir al Apartado" */
+}
+
+footer {
+    background-color: #929493;
+    margin: -2vw;
+    padding: 5vw;
+    border-radius: 5vw;
+    box-shadow: 1vw 1vw 2vw rgba(0, 0, 0, 0.5);
+    margin-bottom: 0; /* Elimina el espacio en blanco en la parte inferior del pie de página */
+}
+
+@media (max-width: 600px) {
+    .titulo, footer {
+        padding: 10vw;
+        margin: 0;
+        border-radius: 5vw;
+    }
+}
+        
