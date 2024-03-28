@@ -13,6 +13,7 @@ body {
     border-radius: 5vw;
     box-shadow: 1vw 1vw 2vw rgba(0, 0, 0, 0.5);
     text-align: center; /* Centra el texto del título */
+    position: relative;
 }
 
 .titulo h1 {
@@ -86,4 +87,27 @@ footer {
         border-radius: 5vw;
     }
 }
-        
+
+
+nav {
+    position: relative; /* Establece la posición absoluta */
+    bottom: -60px; /* Ajusta la posición vertical */
+    left: 0; /* Ajusta la posición horizontal */
+    width: 100%; /* Ajusta el ancho */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 0; /* Añade espaciado alrededor de los elementos */
+}
+
+.nav {
+    display: inline-block; /* Muestra los elementos de la barra de navegación en línea */
+    color: rgb(203, 247, 255); /* Color del texto */
+    text-decoration: none;
+    margin: 5px; /* Espacio entre elementos */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+.nav:hover {
+    background-color: rgba(200, 200, 200, 0.8); /* Cambia el color de fondo al pasar el ratón */
+}
+
+
