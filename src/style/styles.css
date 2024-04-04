@@ -89,25 +89,64 @@ footer {
 }
 
 
+
+
+
+.botones {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.botones buton {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.botones buton:hover {
+    background-color: #0056b3;
+}
+
+.caja {
+    display: none; /* Oculta las cajas inicialmente */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    max-width: 300px;
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    transition: opacity 0.8s ease-in-out;
+}
+
 nav {
-    position: relative; /* Establece la posición absoluta */
-    bottom: -60px; /* Ajusta la posición vertical */
-    left: 0; /* Ajusta la posición horizontal */
-    width: 100%; /* Ajusta el ancho */
-    border-radius: 5px; /* Bordes redondeados */
-    padding: 10px 0; /* Añade espaciado alrededor de los elementos */
+    position: relative;
+    bottom: -30px; /* Ajusta la separación con los elementos del título */
+    left: 0;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 0;
 }
 
 .nav {
-    display: inline-block; /* Muestra los elementos de la barra de navegación en línea */
-    color: rgb(203, 247, 255); /* Color del texto */
+    display: inline-block;
+    color: rgb(203, 247, 255);
     text-decoration: none;
-    margin: 5px; /* Espacio entre elementos */
-    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+    margin: 5px;
+    transition: background-color 0.3s;
 }
 
 .nav:hover {
-    background-color: rgba(200, 200, 200, 0.8); /* Cambia el color de fondo al pasar el ratón */
+    background-color: rgba(200, 200, 200, 0.8);
 }
-
-

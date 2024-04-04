@@ -3,12 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAPACHERS</title>
+    <title>MAPACHERS</title>   
     <link rel="stylesheet" href="../style/styles.css">
 </head>
 <body>
+    <script>
+     function mostrarCaja(opcion) {
+    var loginCaja = document.getElementById("loginCaja");
+    var registerCaja = document.getElementById("registerCaja");
+
+    if (opcion === 'login') {
+        loginCaja.style.display = "block"; // Muestra la caja de login
+        setTimeout(() => {loginCaja.style.opacity = "1";}, 10); // Se agrega una pequeña espera para asegurar la transición
+        registerCaja.style.display = "none"; // Oculta la caja de register
+    } else if (opcion === 'register') {
+        loginCaja.style.display = "none"; // Oculta la caja de login
+        registerCaja.style.display = "block"; // Muestra la caja de register
+        setTimeout(() => {registerCaja.style.opacity = "1";}, 10); // Se agrega una pequeña espera para asegurar la transición
+    }
+
+    // Ocultar la caja si no se ha ingresado nada
+    setTimeout(() => { 
+        if (opcion === 'login' && loginCaja.innerHTML.trim() === '') {
+            loginCaja.style.display = "none";
+        } else if (opcion === 'register' && registerCaja.innerHTML.trim() === '') {
+            registerCaja.style.display = "none";
+        }
+    }, 3000); // Tiempo de espera antes de ocultar la caja si no hay contenido ingresado
+}
+    </script>
+
     <div class="titulo">
         <h1>Estudiantes Mapachers</h1>
+        <script src="../js/main.js" type="module"></script>
+        <div class="botones">
+            <buton onclick="mostrarCaja('login')">Log In</buton>
+            <buton onclick="mostrarCaja('register')">Register</buton>
+        </div>
+        <div class="caja" id="loginCaja">
+            <!-- Contenido del área de Log In -->
+            Contenido de Log In
+        </div>
+        <div class="caja" id="registerCaja">
+            <!-- Contenido del área de Register -->
+            Contenido de Register
+        </div>
         <nav>
             <a  class = "nav" href="../index2.html"><ul><h3>Sobre nosotros</h3></ul></a>
             <a  class ="nav" href="../index3.html"><ul><h3>Otros proyectos</h3></ul></a>
@@ -46,5 +85,7 @@
             Derechos reservados 2024
         </footer>
     </center>
+    
+    
 </body>
 </html>
