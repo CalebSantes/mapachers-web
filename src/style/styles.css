@@ -87,50 +87,85 @@ footer {
         border-radius: 5vw;
     }
 }
-
-
-
-
-
-.botones {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+/* Estilos para el botón "Sign in" */
+#mostrarModal {
+    background-color: #007bff; /* Fondo azul */
+    color: white; /* Texto blanco */
+    border: none; /* Sin bordes */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer;
+     /* Convertir a bloque para centrar */
+    margin: 20px auto 10px; /* Centrar horizontalmente y agregar margen superior e inferior */
 }
 
-.botones buton {
-    padding: 10px 20px;
-    margin: 0 10px;
-    border: none;
-    border-radius: 20px;
-    background-color: #007bff;
-    color: white;
-    font-size: 18px;
+/* Estilos para la caja modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 20px; /* Bordes redondeados */
+}
+
+/* Estilos para el contenido de la caja modal */
+.modal-contenido {
+    background-color: #fff; /* Fondo blanco */
+    margin: 10vh auto; /* Centrar vertical y horizontalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ancho del contenido */
+    max-width: 600px; /* Ancho máximo */
+    border-radius: 20px; /* Bordes redondeados */
+    text-align: center;
+    position: relative; /* Posición relativa para el botón de cerrar */
+}
+
+/* Estilos para el botón de cerrar */
+.cerrar {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute; /* Posición absoluta */
+    top: 10px; /* 10px de margen superior */
+    right: 10px; /* 10px de margen derecho */
     cursor: pointer;
 }
 
-.botones buton:hover {
-    background-color: #0056b3;
+/* Estilos para los botones adicionales dentro de la caja modal */
+.modal-contenido button {
+    margin-top: 10px; /* Margen superior */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin bordes */
+    border-radius: 20px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer;
 }
 
-.caja {
-    display: none; /* Oculta las cajas inicialmente */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60%;
-    max-width: 300px;
-    height: auto;
+/* Estilos para los botones con diferentes colores */
+.botonAzul {
+    background-color: #007bff;
+    color: white;
+}
+
+.botonBlanco {
     background-color: white;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    padding: 20px;
-    transition: opacity 0.8s ease-in-out;
+    color: #007bff;
 }
 
-nav {
+.botonGris {
+    background-color: #aaa;
+    color: white;
+}
+
+
+  nav {
     position: relative;
     bottom: -30px; /* Ajusta la separación con los elementos del título */
     left: 0;
