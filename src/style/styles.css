@@ -99,8 +99,6 @@ footer {
      /* Convertir a bloque para centrar */
     margin: 20px auto 10px; /* Centrar horizontalmente y agregar margen superior e inferior */
 }
-
-/* Estilos para la caja modal */
 .modal {
     display: none;
     position: fixed;
