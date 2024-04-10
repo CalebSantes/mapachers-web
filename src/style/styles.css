@@ -99,6 +99,8 @@ footer {
      /* Convertir a bloque para centrar */
     margin: 20px auto 10px; /* Centrar horizontalmente y agregar margen superior e inferior */
 }
+
+/* Estilos para la caja modal */
 .modal {
     display: none;
     position: fixed;
@@ -146,21 +148,7 @@ footer {
     cursor: pointer;
 }
 
-/* Estilos para los botones con diferentes colores */
-.botonAzul {
-    background-color: #007bff;
-    color: white;
-}
 
-.botonBlanco {
-    background-color: white;
-    color: #007bff;
-}
-
-.botonGris {
-    background-color: #aaa;
-    color: white;
-}
 
 
   nav {
@@ -182,4 +170,53 @@ footer {
 
 .nav:hover {
     background-color: rgba(200, 200, 200, 0.8);
+}
+
+#gmail {
+    background-color: #f1aba5; /* Color de fondo para Gmail */
+    border-color: #db4437; /* Color del borde para Gmail */
+    color: white; /* Color del texto */
+}
+
+#facebook {
+    background-color: #1877f2; /* Color de fondo para Facebook */
+    border-color: #1877f2; /* Color del borde para Facebook */
+    color: white; /* Color del texto */
+}
+
+#github {
+    background-color: #333333; /* Color de fondo para Github */
+    border-color: #333333; /* Color del borde para Github */
+    color: white; /* Color del texto */
+}
+
+
+.social-button {
+    display: inline-flex; /* Para que el botón se ajuste al tamaño del contenido */
+    align-items: center; /* Para alinear verticalmente la imagen y el texto */
+    margin-bottom: 10px; /* Espacio entre los botones */
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold; /* Resalta el texto */
+}
+
+.social-button img {
+    width: auto; /* Ajusta el tamaño de la imagen automáticamente */
+    height: 20px; /* Ajusta la altura de la imagen según el texto */
+    margin-right: 5px; /* Espacio entre la imagen y el texto */
+}
+
+
+.social-button:hover {
+    transform: scale(1.1); /* Agrandar el botón al pasar el cursor */
+    transition: transform 0.3s; /* Añadir una transición suave */
+}
+#guardar {
+    background-color:#1877f2; /* Color de fondo */
+    border-color:#1877f2; /* Color del borde */
+    color: white; /* Color del texto */
 }
