@@ -220,3 +220,15 @@ footer {
     border-color:#1877f2; /* Color del borde */
     color: white; /* Color del texto */
 }
+/* Estilos para el botón "Sign in" */
+#mostrarModal2 {
+    background-color: #007bff; /* Fondo azul */
+    color: white; /* Texto blanco */
+    border: none; /* Sin bordes */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer;
+     /* Convertir a bloque para centrar */
+    margin: 20px auto 10px; /* Centrar horizontalmente y agregar margen superior e inferior */
+}

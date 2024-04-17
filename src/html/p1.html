@@ -12,37 +12,52 @@
         <h1>Estudiantes Mapachers</h1>
         <script src="../js/main.js" type="module"></script>
           <br><br>
-        <buton id="mostrarModal">Sign in</buton>
-    <div id="miModal" class="modal">
+        <buton id="mostrarModal">Signin</buton>
+      <div id="miModal" class="modal">
         <div class="modal-contenido">
          <span class="cerrar">&times;</span>
          <h2>Sign in</h2>
          <input type="text" placeholder="Email">
          <input type="password" placeholder="Contraseña">
-         <button id="guardar" class="social-button">Guardar</button>
+         <buton id="guardar" class="social-button">Iniciar</buton>
          <br><br>
-         <button id="gmail"class="social-button">
-          <img src="../resources/gmail.png" >
-          Iniciar sesión con Gmail
-      </button><br>
+         <buton id="gmail" class="social-button">
+          <img src="../resources/google.png" >
+          Iniciar sesión con Google
+         </buton><br>
       
-      <button id="facebook"class="social-button">
+         <buton id="facebook" class="social-button">
           <img src="../resources/facebook.png" >
           Iniciar sesión con Facebook
-      </button><br>
+         </buton><br>
       
-      <button id="github"class="social-button">
+         <buton id="github" class="social-button">
           <img src="../resources/github.png">
           Iniciar sesión con Github
-      </button><br>
-     </div>
-    </div>
+         </buton><br>
+        </div>
+        
+      </div>
+      <buton id="mostrarModal2">Signup</buton>
+      <div id="miModal2" class="modal">
+        <div class="modal-contenido">
+         <span class="cerrar2">&times;</span>
+         <h2>Sign in</h2>
+         <input type="text" placeholder="Email">
+         <input type="password" placeholder="Contraseña">
+         <buton id="guardar" class="social-button">Registrarse</buton>
+        </div>
+      </div> 
+     
+   
+     
         <nav>
             <a  class = "nav" href="../index2.html"><ul><h3>Sobre nosotros</h3></ul></a>
             <a  class ="nav" href="../index3.html"><ul><h3>Otros proyectos</h3></ul></a>
         </nav>
-         
-    </div>
+      </div>
+      
+    
 
 
     <div class="p1">
@@ -100,12 +115,39 @@ if (botonCerrar.length > 0) {
   };
 }
 
+var botonMostrarModal2 = document.getElementById('mostrarModal2');
+var modal2 = document.getElementById('miModal2');
+
+if (botonMostrarModal2 != null) {
+  // Cuando se hace clic en el botón, mostrar la caja modal
+  botonMostrarModal2.onclick = function() {
+    if (modal2 != null) {
+      modal2.style.display = 'block';
+    }
+  };
+}
+
+var botonCerrar2 = document.getElementsByClassName('cerrar2');
+if (botonCerrar2.length > 0) {
+  // Cuando se hace clic en el botón de cerrar, ocultar la caja modal
+  botonCerrar2[0].onclick = function() {
+    if (modal2 != null) {
+      modal2.style.display = 'none';
+    }
+  };
+}
+
 // Cuando se hace clic en cualquier lugar fuera de la caja modal, ocultarla
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = 'none';
   }
+  
+  if (event.target == modal2) {
+    modal2.style.display = 'none';
+  }
 };
+
 </script>
 </body>
 </html>
