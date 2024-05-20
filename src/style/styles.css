@@ -6,7 +6,7 @@ body {
 
 .titulo {
     padding: 5vw;
-    margin: auto;
+    margin: 0px;
     background-image: url('../resources/fondo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,16 +17,7 @@ body {
     position: relative;
 }
 
-.titulo h1 {
-    color: white; /* Color del texto del título */
-    margin: 0; /* Elimina el margen del título */
-    font-size: 4vw; /* Tamaño del título */
-    transition: font-size 0.5s; /* Transición suave del tamaño del título */
-}
 
-.titulo:hover h1 {
-    font-size: 4.5vw; /* Tamaño más grande del título al pasar el cursor */
-}
 
 .p1 {
     display: flex;
@@ -68,10 +59,6 @@ img {
     height: auto; /* Ajusta la altura de las imágenes de forma proporcional */
 }
 
-button {
-    display: none; /* Oculta el botón "Ir al Apartado" */
-}
-
 footer {
     background-color: #929493;
     margin: -2vw;
@@ -81,13 +68,6 @@ footer {
     margin-bottom: 0; /* Elimina el espacio en blanco en la parte inferior del pie de página */
 }
 
-@media (max-width: 600px) {
-    .titulo, footer {
-        padding: 10vw;
-        margin: 0;
-        border-radius: 5vw;
-    }
-}
   nav {
     position: relative;
     bottom: -30px; /* Ajusta la separación con los elementos del título */
@@ -108,10 +88,7 @@ footer {
 .nav:hover {
     background-color: rgba(200, 200, 200, 0.8);
 }
-#logo{
-    width: 12svw;
-    height: 12vw;
-}
+
 
 
   
@@ -120,4 +97,13 @@ footer {
     font-size: 0.8em;
 }
 
-  
+#navbarNav{
+    font-size: 3vw; /* Tamaño del título adaptado al tamaño del dispositivo */
+    background-size: cover; /* Ajusta el tamaño del fondo */
+    background-repeat: no-repeat; /* No se repite el fondo */
+    background-position: center; /* Centra el fondo */
+    border-radius: 5vw; /* Borde redondeado */
+    padding: 1vw; /* Espaciado interno */
+}
+
+
