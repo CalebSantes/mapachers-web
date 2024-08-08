@@ -32,6 +32,6 @@ signupForm.addEventListener('submit', async (e) => {
             alert = 'Se produjo un error durante el registro. Por favor, inténtalo de nuevo más tarde.';
         }
         console.error(error);
-        showMessage(alertMessage, "error");
+        showMessage(alert, "error");
     }
 });
